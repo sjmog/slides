@@ -1,0 +1,39 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "A set of slides after Gary Bernhardt's introduction slides at DeconstructConf 2017.",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "npm-watch": "^0.1.9",
+    "webpack": "^2.5.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": "src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/sjmog/slides.git"
+  },
+  "keywords": [
+    "slides"
+  ],
+  "author": "Sam Morgan (s_morgan@me.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sjmog/slides/issues"
+  },
+  "homepage": "https://github.com/sjmog/slides#readme",
+  "dependencies": {
+    "FitText-UMD": "^1.0.0",
+    "smoothscroll": "^0.3.0",
+    "smoothscroll-polyfill": "^0.3.5"
+  }
+}
