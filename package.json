@@ -33,6 +33,7 @@
   "homepage": "https://github.com/sjmog/slides#readme",
   "dependencies": {
     "FitText-UMD": "^1.0.0",
+    "bigtext": "^0.1.8",
     "smoothscroll": "^0.3.0",
     "smoothscroll-polyfill": "^0.3.5"
   }

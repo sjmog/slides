@@ -53,12 +53,18 @@ table {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  color: #222;
 }
 
 /* layout */
 
+body {
+  background: #fafafa;
+}
+
 main {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 /* slides effect */
@@ -66,16 +72,29 @@ main {
 .segment {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  display: inline-block;
+  line-height: 0.74;
+}
+
+.segment + .segment {
+  padding-left: 48px;
 }
 
 .unveiled {
   opacity: 1;
 }
 
+[class^='bigtext-line'] {
+  line-height: 0.74;
+  padding: 0.14em 0;
+}
+
 /* overrides */
 
--moz-user-select: -moz-none;
--khtml-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-user-select: none;
+* {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
